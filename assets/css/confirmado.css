@@ -63,14 +63,30 @@ body{
     justify-content: center;
     margin-top: -6em;
 }
+.container .content-calendar .content-confirmado .nomeconfirmado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container .content-calendar .content-confirmado .nomeconfirmado h1{
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 20px;
+    line-height: 1.2;
+}
+.container .content-calendar .content-confirmado .nomeconfirmado p{
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    text-align: center; 
+}
 .container .content-calendar .content-confirmado .content-detalhes{
-    width: 400px;
+    width: 500px;
     border-top: 1px solid var(--corBorda);
     border-bottom: 1px solid var(--corBorda);
 }
 .container .content-calendar .content-confirmado .content-detalhes .box{
     margin: 15px 0;
-    line-height: 1.5;
 }
 .container .content-calendar .content-confirmado .content-detalhes .nomedoagendador{
     padding: 10px 0;
@@ -110,7 +126,6 @@ body{
 .container .content-calendar .content-confirmado .content-detalhes .horaconfirmada{
     width: 100%;
     display: flex;
-    margin: 20px 0;
 }
 .container .content-calendar .content-confirmado .content-detalhes .horaconfirmada .svg{
     width: 25px;
@@ -142,4 +157,11 @@ body{
     font-weight: 700;
     line-height: 25px;
     color: var(--corSubNome);
+}
+
+.container .content-calendar .content-confirmado .content-detalhes .verificemail{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-align: center;
 }
