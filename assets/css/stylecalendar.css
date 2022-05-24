@@ -1,0 +1,73 @@
+
+.container .content-calendar .cont-calendar .box .box-container #dycalendar{ /* calendario conteudo */
+    position: relative;
+    width: 100%;
+}
+.container .content-calendar .cont-calendar .box .box-container #dycalendar table{ /* todo conteudo do calendario */
+    width: 100%;
+    height: 100%;
+    margin-top: 40px;
+}
+.container .content-calendar .cont-calendar .box .box-container #dycalendar table td{ /* numeros do calendario */
+    color: var(--corNomeNumer);
+    padding: 10px 12px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 16px;
+}
+
+.container .content-calendar .cont-calendar .box .box-container #dycalendar table tr:nth-child(1) td{ /* letras dos dias do calendario */
+    color: var(--corNomeNumer);
+    padding: 10px 12px;
+    border-radius: 50%;
+    font-weight: 500;
+    font-size: 16px;
+}
+.container .content-calendar .cont-calendar .box .box-container #dycalendar table tr:nth-child(2) td:hover{
+    background-color: var(--corNumeroBackgroundHover);
+}
+.dycalendar-month-container .dycalendar-today-date,
+.dycalendar-month-container .dycalendar-target-date{ /* estilização dos numeros do calendario */
+    background-color: var(--corNumeroSelect) !important;
+    color: var(--corBacksNome) !important;
+    font-weight: 600;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dycalendar-month-container .dycalendar-today-date,
+.dycalendar-month-container .dycalendar-target-date:hover{
+    background-color: var(--corNumeroBackgroundHover);
+}
+.dycalendar-month-container .dycalendar-today-date,
+.dycalendar-month-container .dycalendar-target-date::before{ /* botões dos dias selecionados do calendario */
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: var(--corBacksNome);
+    border-radius: 50%;
+    margin-top: 30px;
+}
+.dycalendar-month-container .dycalendar-header .dycalendar-prev-next-btn.prev-btn,
+.dycalendar-month-container .dycalendar-header .dycalendar-prev-next-btn.next-btn{ /* botões de avançar o mes do calendario */
+    color: var(--corNomeNumer);
+    padding: 5px 15px;
+    font-size: 24px;
+    border-radius: 50%;
+}
+.dycalendar-month-container .dycalendar-header .dycalendar-prev-next-btn.next-btn{
+    color: #0069ff;
+}
+.dycalendar-month-container .dycalendar-header .dycalendar-prev-next-btn.next-btn:hover{
+    background-color: var(--corNumeroBackgroundHover);
+}
+.dycalendar-month-container .dycalendar-header .dycalendar-prev-next-btn.prev-btn:hover{
+    background-color: var(--corNumeroBackgroundHover);
+}
+.dycalendar-month-container .dycalendar-span-month-year{ /* nome do mes do calendario */
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: lowercase;
+}

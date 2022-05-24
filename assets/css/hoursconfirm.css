@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'proximaNova', sans-serif; */
+    font-family: 'Open Sans', sans-serif;
+}
+@font-face {
+    font-family: proximaNova;
+    src: url('../font/Proxima\ Nova\ Font.otf');
+ }
+
+:root{
+    --corNomeNumer: #151515;
+    --corBacksNome: #ffffff;
+    --corBackground: #f7f7f7;
+    --corSubNome: #777777;
+    --corNumeroSelect: #0060e6;
+    --corNumeroBackground: #0069ff11;
+    --corNumeroBackgroundHover: #0069ff26;
+    --corBorda: #4949492a;
+    --corSombra: #00000025;
+    --corBrodarHour: #0069ff80;
+}
+
+
+/* ################################################# */
+
+a{
+    top: 20px;
+    right: 20px;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+}
+a img{
+    width: 100%;
+    height: 100%;
+}
+body{
+    position: relative;
+    min-height: 100vh;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--corBackground);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container .content-calendar{
+    width: 80%;
+    height: 80%;
+    max-width: 90em;
+    min-height: 550px;
+    display: flex;
+    align-items: center;
+    background-color: var(--corBacksNome);
+    border-radius: 10px;
+    border: 1px solid var(--corBorda);
+    box-shadow: 0 0 30px -5px var(--corSombra);
+    overflow: hidden;
+}
+.container .content-calendar .calendar-scheds{
+    width: 50%;
+    height: 100%;
+    border-right: 1px solid var(--corBorda);
+    padding: 3%;
+}
+.container .content-calendar .calendar-scheds h4{
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--corSubNome);
+}
+.container .content-calendar .calendar-scheds h1{
+    font-size: 1.7em;
+    font-weight: 700;
+    color: var(--corNomeNumer);
+}
+.container .content-calendar .calendar-scheds .duração{
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+.container .content-calendar .calendar-scheds .duração img{
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+.container .content-calendar .calendar-scheds .duração h3{
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--corSubNome);
+}
+
+.container .content-calendar .calendar-scheds .detalhes{
+    width: 100%;
+    display: flex;
+}
+.container .content-calendar .calendar-scheds .detalhes .svg{
+    width: 26px;
+    height: 26px;
+}
+.container .content-calendar .calendar-scheds .detalhes .svg img{
+    width: 100%;
+    height: 100%;
+}
+.container .content-calendar .calendar-scheds .detalhes h3{
+    font-size: 14px;
+    width: 300px;
+    font-weight: 700;
+    margin-left: 10px;
+    line-height: 25px;
+}
+.container .content-calendar .calendar-scheds .descricao{
+    width: 100%;
+    margin-top: 20px;
+}
+.container .content-calendar .calendar-scheds .descricao p{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.container .content-calendar .cont-calendar{
+    width: 50%;
+    height: 100%;
+    padding: 3%;
+}
+.container .content-calendar .cont-calendar h2{
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--corNomeNumer);
+    margin: 20px 0;
+}
+.container .content-calendar .cont-calendar .box{
+    position: relative;
+}
+.container .content-calendar .cont-calendar .box .box-container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .content-timers{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 3% 0;
+}
+.container .contenthours{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+.container .contenthours .content-confirm{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+.container .contenthours .content-confirm button{
+    width: 100%;
+    padding: 15px 0;
+    border: none;
+    outline: 1px solid var(--corBrodarHour);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    cursor: pointer;
+    margin: 5px;
+}
+.container .contenthours .content-confirm span{
+    width: 100%;
+    padding: 15px 0;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--corNumeroSelect);
+    color: #f7f7f7;
+    cursor: pointer;
+}
+.container .contenthours .content-confirm button:hover{
+    outline: 3px solid var(--corNumeroSelect);
+}

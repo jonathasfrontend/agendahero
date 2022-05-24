@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda Hero | Digite as informaçãoes</title>
+    <link rel="stylesheet" href="assets/css/confirm.css">
+    <link rel="stylesheet" href="assets/css/stylecalendar.css">
+    <link rel="stylesheet" href="assets/css/dycalendar.css">
+</head>
+<body>
+
+    <a href="confirmado.html" class="nextbtn"><img src="assets/img/seta.svg" alt=""></a>
+    
+    <main class="container">
+        <div class="content-calendar">
+            <div class="calendar-scheds">
+
+                <div class="back">
+                    <a href="hoursconfirm.html" class="contback">
+                        <img src="assets/img/back.svg" alt="">
+                    </a>
+                </div>
+
+                <h4 class="autor">Jonathas Oliveira</h4>
+                <h1 class="titulo">Reunião de 1 hora</h1>
+
+                <div class="duração">
+                    <span class="svg"><img src="assets/img/time.svg" alt=""></span>
+                    <h3>1 hs</h3>
+                </div>
+
+                <div class="detalhes">
+                    <span class="svg"><img src="assets/img/videocam.svg" alt=""></span>
+                    <h3>Detalhes da webconferência são providenciados após a confirmação.</h3>
+                </div>
+
+                <div class="horaconfirmada">
+                    <span class="svg"><img src="assets/img/calendar.svg" alt=""></span>
+                    <h3>10:00 - 11:00, Sexta-feira, 15 abril 2022</h3>
+                </div>
+
+                <div class="tipohorario">
+                    <span class="svg"><img src="assets/img/globo.svg" alt=""></span>
+                    <h3>Horário de Brasília</h3>
+                </div>
+            </div>
+
+            <div class="cont-calendar">
+                <h2>Preencha o campos</h2>
+
+                <div class="box">
+                    <p>Nome</p>
+                    <input type="text" name="" id="">
+                    
+                    <p>E-mail</p>
+                    <input type="email" name="" id="">
+
+                    <button id="addguest">Adicionar convidados</button>
+
+                    <div class="box-convidados" id="boxconvidados">
+                        <p>E-mail(s) do(s) Convidado(s)</p>
+                        <textarea maxlength="10000" name="question_0" autocorrect="off" autocomplete="off"></textarea>
+                    </div>
+
+                    <p>Por favor, compartilhe qualquer coisa que possa ser útil para a preparação da nossa reunião.</p>
+                    <textarea maxlength="10000" name="question_0" autocorrect="off" autocomplete="off"></textarea>
+                </div>
+
+            </div>
+
+            <div class="content-timers"></div>
+        </div>
+    </main>
+
+    <script src="assets/js/confirm.js"></script>
+</body>
+</html>

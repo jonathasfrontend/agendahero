@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda Hero | Escolha data e horario </title>
+    <link rel="stylesheet" href="assets/css/hoursconfirm.css">
+    <link rel="stylesheet" href="assets/css/stylecalendar.css">
+    <link rel="stylesheet" href="assets/css/dycalendar.css">
+</head>
+<body>
+
+    <a href="confirm.html"><img src="assets/img/seta.svg" alt=""></a>
+    
+    <main class="container">
+        <div class="content-calendar">
+            <div class="calendar-scheds">
+                <h4 class="autor">Jonathas Oliveira</h4> <!-- Nome do usuario que planejou a reuniao -->
+                <h1 class="titulo">Reunião de 1 hora</h1> <!-- Titulo da reuniao -->
+                <span class="duração"><img src="assets/img/time.svg" alt=""><h3>1 hs</h3></span> <!-- Tempo de duração da reunião -->
+                <div class="detalhes"> <!-- Detalhes da reunião -->
+                    <span class="svg"><img src="assets/img/videocam.svg" alt=""></span>
+                    <h3>Detalhes da webconferência são providenciados após a confirmação.</h3>
+                </div>
+                <div class="descricao">
+                    <p>Aqui fica uma descricao</p>
+                </div>
+            </div>
+
+            <div class="cont-calendar">
+                <h2>Escolha uma data e horário</h2>
+                <div class="box">
+                    <div class="box-container">
+                        <div id="dycalendar"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-timers">
+                <div class="timertitle" id="timertitle"></div>
+                <div class="contenthours" id="contenthours">
+                    
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="assets/js/dycalendar.js"></script>
+    <script>
+        dycalendar.draw({
+        target: '#timertitle',
+        type: 'day'
+    });
+        dycalendar.draw({
+        target: '#dycalendar',
+        type: 'month',
+        dayformat: 'full',
+        monthformat: 'full',
+        highlighttargetdate: true,
+        prevnextbutton: 'show',
+    });
+
+    const contentHours = document.getElementById('contenthours');
+
+    let text = "";
+    for (let i = 8; i < 17; i++) {
+        text += `
+        <div class="content-confirm">
+            <button><p>${i}:00</p></button> <span class="confirmar">Confirmar</span>
+        </div>
+        `;
+    }
+    contentHours.innerHTML = text;
+    </script>
+</body>
+</html>

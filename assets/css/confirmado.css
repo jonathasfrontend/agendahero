@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'proximaNova', sans-serif; */
+    font-family: 'Open Sans', sans-serif;
+}
+
+:root{
+    --corNomeNumer: #151515;
+    --corBacksNome: #ffffff;
+    --corBackground: #f7f7f7;
+    --corSubNome: #777777;
+    --corNumeroSelect: #0060e6;
+    --corNumeroBackground: #0069ff11;
+    --corNumeroBackgroundHover: #0069ff26;
+    --corBorda: #4949492a;
+    --corSombra: #00000025;
+    --corBrodarHour: #0069ff80;
+    --corPrinci: #0069ff;
+    --corConfimado: #17e885;
+}
+@font-face {
+    font-family: proximaNova;
+    src: url('../font/Proxima\ Nova\ Font.otf');
+ }
+
+
+/* ################################################# */
+
+body{
+    position: relative;
+    min-height: 100vh;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--corBackground);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container .content-calendar{
+    width: 77%;
+    height: 80%;
+    max-width: 90em;
+    min-height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--corBacksNome);
+    border-radius: 10px;
+    border: 1px solid var(--corBorda);
+    box-shadow: 0 0 30px -5px var(--corSombra);
+    overflow: hidden;
+}
+.container .content-calendar .content-confirmado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: -6em;
+}
+.container .content-calendar .content-confirmado .content-detalhes{
+    width: 400px;
+    border-top: 1px solid var(--corBorda);
+    border-bottom: 1px solid var(--corBorda);
+}
+.container .content-calendar .content-confirmado .content-detalhes .box{
+    margin: 15px 0;
+    line-height: 1.5;
+}
+.container .content-calendar .content-confirmado .content-detalhes .nomedoagendador{
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+.container .content-calendar .content-confirmado .content-detalhes .nomedoagendador .boll{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--corConfimado);
+    margin-right: 20px;
+}
+.container .content-calendar .content-confirmado .content-detalhes .nomedoagendador h1{
+    position: relative;
+    font-size: 20px;
+    color: var(--corNomeNumer);
+}
+
+.container .content-calendar .content-confirmado .content-detalhes .detalhes{
+    width: 100%;
+    display: flex;
+}
+.container .content-calendar .content-confirmado .content-detalhes .detalhes .svg{
+    width: 25px;
+    height: 25px;
+    margin-right: 0px;
+}
+.container .content-calendar .content-confirmado .content-detalhes .detalhes h3{
+    font-size: 14px;
+    width: 300px;
+    font-weight: 700;
+    margin-left: 10px;
+    line-height: 25px;
+    color: var(--corSubNome);
+}
+.container .content-calendar .content-confirmado .content-detalhes .horaconfirmada{
+    width: 100%;
+    display: flex;
+    margin: 20px 0;
+}
+.container .content-calendar .content-confirmado .content-detalhes .horaconfirmada .svg{
+    width: 25px;
+    height: 25px;
+    margin-right: 0px;
+}
+.container .content-calendar .content-confirmado .content-detalhes .horaconfirmada h3{
+    font-size: 14px;
+    width: 300px;
+    font-weight: 700;
+    margin-left: 10px;
+    line-height: 25px;
+    color: var(--corSubNome);
+}
+
+.container .content-calendar .content-confirmado .content-detalhes .tipohorario{
+    display: flex;
+    align-items: center;
+}
+.container .content-calendar .content-confirmado .content-detalhes .tipohorario .svg{
+    width: 25px;
+    height: 25px;
+    margin-right: 0px;
+}
+.container .content-calendar .content-confirmado .content-detalhes .tipohorario h3{
+    font-size: 14px;
+    width: 300px;
+    margin-left: 10px;
+    font-weight: 700;
+    line-height: 25px;
+    color: var(--corSubNome);
+}

@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'proximaNova', sans-serif; */
+    font-family: 'Open Sans', sans-serif;
+}
+
+:root{
+    --corNomeNumer: #151515;
+    --corBacksNome: #ffffff;
+    --corBackground: #f7f7f7;
+    --corSubNome: #777777;
+    --corNumeroSelect: #0060e6;
+    --corNumeroBackground: #0069ff11;
+    --corNumeroBackgroundHover: #0069ff26;
+    --corBorda: #4949492a;
+    --corSombra: #00000025;
+    --corBrodarHour: #0069ff80;
+    --corPrinci: #0069ff;
+}
+@font-face {
+    font-family: proximaNova;
+    src: url('../font/Proxima\ Nova\ Font.otf');
+ }
+
+
+/* ################################################# */
+
+.nextbtn{
+    top: 20px;
+    right: 20px;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+}
+.nextbtn img{
+    width: 100%;
+    height: 100%;
+}
+body{
+    position: relative;
+    min-height: 100vh;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--corBackground);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container .content-calendar{
+    width: 77%;
+    height: 80%;
+    max-width: 90em;
+    min-height: 550px;
+    display: flex;
+    align-items: center;
+    background-color: var(--corBacksNome);
+    border-radius: 10px;
+    border: 1px solid var(--corBorda);
+    box-shadow: 0 0 30px -5px var(--corSombra);
+    overflow: hidden;
+}
+.container .content-calendar .calendar-scheds{
+    width: 50%;
+    height: 100%;
+    border-right: 1px solid var(--corBorda);
+    padding: 3%;
+}
+.container .content-calendar .calendar-scheds .back{
+    width: 43px;
+    height: 43px;
+    margin: 0 0 20px 0;
+    padding: 3px;
+    border-radius: 50%;
+    border: 1px solid var(--corBorda);
+}
+.container .content-calendar .calendar-scheds .back .contback{
+    margin: 20px 0;
+}
+.container .content-calendar .calendar-scheds .back .contback img{
+    width: 100%;
+    height: 100%;
+}
+.container .content-calendar .calendar-scheds h4{
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--corSubNome);
+}
+.container .content-calendar .calendar-scheds h1{
+    font-size: 1.7em;
+    font-weight: 700;
+    color: var(--corNomeNumer);
+}
+
+.container .content-calendar .calendar-scheds .duração{
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+.container .content-calendar .calendar-scheds .duração .svg{
+    width: 25px;
+    height: 25px;
+}
+.container .content-calendar .calendar-scheds .duração h3{
+    font-size: 14px;
+    width: 300px;
+    font-weight: 700;
+    margin-left: 10px;
+    line-height: 25px;
+    color: var(--corSubNome);
+}
+
+.container .content-calendar .calendar-scheds .detalhes{
+    width: 100%;
+    display: flex;
+}
+.container .content-calendar .calendar-scheds .detalhes .svg{
+    width: 25px;
+    height: 25px;
+}
+.container .content-calendar .calendar-scheds .detalhes h3{
+    font-size: 14px;
+    width: 300px;
+    font-weight: 700;
+    margin-left: 10px;
+    line-height: 25px;
+    color: var(--corSubNome);
+}
+.container .content-calendar .calendar-scheds .horaconfirmada{
+    width: 100%;
+    display: flex;
+    margin: 20px 0;
+}
+.container .content-calendar .calendar-scheds .horaconfirmada .svg{
+    width: 25px;
+    height: 25px;
+}
+.container .content-calendar .calendar-scheds .horaconfirmada h3{
+    font-size: 14px;
+    width: 300px;
+    font-weight: 700;
+    margin-left: 10px;
+    line-height: 25px;
+    color: var(--corSubNome);
+}
+
+.container .content-calendar .calendar-scheds .tipohorario{
+    display: flex;
+    align-items: center;
+}
+.container .content-calendar .calendar-scheds .tipohorario .svg{
+    width: 25px;
+    height: 25px;
+}
+.container .content-calendar .calendar-scheds .tipohorario h3{
+    font-size: 14px;
+    width: 300px;
+    margin-left: 10px;
+    font-weight: 700;
+    line-height: 25px;
+    color: var(--corSubNome);
+}
+
+/* ######################################## */
+
+.container .content-calendar .cont-calendar{
+    width: 50%;
+    height: 100%;
+    padding: 3%;
+}
+.container .content-calendar .cont-calendar h2{
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--corNomeNumer);
+    margin: 20px 0;
+}
+.container .content-calendar .cont-calendar .box{
+    position: relative;
+}
+.container .content-calendar .cont-calendar .box .box-container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .content-calendar .content-timers{
+    width: 300px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 3% 0;
+}
+.container .content-calendar .cont-calendar{
+    width: 100%;
+    overflow: auto;
+}
+.container .content-calendar .cont-calendar .box{
+    width: 100%;
+    overflow: auto;
+}
+.container .content-calendar .cont-calendar .box .box-convidados{
+    display: none;
+}
+.container .content-calendar .cont-calendar .box .box-convidados.show{
+    display: block;
+}
+.container .content-calendar .cont-calendar .box p{
+    margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 14px;
+}
+.container .content-calendar .cont-calendar .box input{
+    box-sizing: border-box;
+    outline: none;
+    width: 100%;
+    min-height: 46px;
+    padding: 10px 14px;
+    color: #1a1a1a;
+    font-size: 16px;
+    line-height: 1.5;
+    overflow-wrap: normal;
+    background: #fff;
+    border: 1px solid #d0d0d0;
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+.container .content-calendar .cont-calendar .box input:focus{
+    border-color: var(--corPrinci);
+    box-shadow: inset 0 0 0 1px var(--corPrinci);
+}
+.container .content-calendar .cont-calendar .box textarea{
+    outline: none;
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 46px;
+    padding: 10px 14px;
+    color: #1a1a1a;
+    font-size: 16px;
+    line-height: 1.5;
+    overflow-wrap: normal;
+    background: #fff;
+    border: 1px solid #d0d0d0;
+    border-radius: 8px;
+    border-color: var(--corPrinci);
+    box-shadow: inset 0 0 0 1px var(--corPrinci);
+    margin: 8px 0;
+}
+.container .content-calendar .cont-calendar .box button{
+    color: var(--corPrinci);
+    background-color: var(--corBacksNome);
+    box-sizing: border-box;
+    min-height: 44px;
+    padding: 8px 16px;
+    font-size: 14px;
+    line-height: 20px;
+    border: 1px solid var(--corPrinci);
+    border-radius: 40px;
+    margin: 20px 0;
+    cursor: pointer;
+}
